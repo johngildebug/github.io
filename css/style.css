@@ -227,15 +227,47 @@ color: var(--color-orange);
 }
 
 /* syntax highlight */
-.code-selector {
+
+/* CSS selectors or JS objects */
+.code-selector, .code-obj {
     color: #dfa324;
 }
 
-.code-prop {
+/* CSS properties or JS variables */
+.code-prop, .code-var {
     color: #4dc1ff;
 }
-.code-val {
+
+/* Values, strings, or constants */
+.code-val, .code-str {
     color: var(--color-orange);
+}
+
+/* Comments */
+.code-comment {
+    color: green;
+    font-style: italic;
+}
+
+/* Keywords (const, let, function, etc.) */
+.code-keyword {
+    color: #ff7f50;
+}
+
+/* Methods or functions */
+.code-method, .code-func {
+    color: #1e90ff;
+}
+
+/* Code block styling */
+.code-block {
+    background-color: #1e1e1e;
+    padding: 1em;
+    border-radius: 6px;
+    display: block;
+    overflow-x: auto;
+    font-family: monospace;
+    font-size: 0.95em;
 }
 
 /* ----FOOTER---- */

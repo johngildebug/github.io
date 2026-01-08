@@ -66,7 +66,8 @@
                   style="vertical-align: middle; margin-right: 5px"
                 >
                   <path
-                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                  />
                 </svg>
                 View Source Code</a
               >
@@ -76,16 +77,16 @@
           <article class="project-story">
             <h2>The Challenge</h2>
             <p>
-              I needed a fast, lightweight portfolio to showcase my work. Many
-              templates rely on heavy frameworks like React for simple sites,
-              which hurts performance and SEO.
+              I needed a fast, lightweight portfolio to showcase my work and
+              document my learning journey from a beginners perspective. I
+              wanted to avoid Wordpress or a 'drag and drop' style web builder
+              so I can learn on the job.
             </p>
 
             <h2>The Solution</h2>
             <p>
-              I chose to build this site using vanilla HTML and CSS. This
-              ensured a perfect 100/100 Lighthouse score and complete control
-              over the design.
+              I chose to build this site initially using simple HTML and CSS.
+              This also give me complete control over the design.
             </p>
 
             <figure class="project-image-block">
@@ -106,15 +107,25 @@
 
             <h2>Code Snippets</h2>
             <p>
-              Here's one snippet of code I found interesting.
+              Here's an example CSS code snippet for code I used to set the
+              hover style for my skills.
             </p>
 
             <pre
               class="code-block"
-            ><code><span class="code-selector">.site-nav a:hover</span> {
-    <span class="code-prop">color</span>: <span class="code-val">var(--color-orange)</span>;
-    <span class="code-prop">transition</span>: <span class="code-val">color 0.2s</span>;
-}</code></pre>
+            ><code><span class="code-keyword">const</span> <span class="code-var">toggleButton</span> = <span class="code-obj">document</span>.<span class="code-method">querySelector</span>(<span class="code-str">'.mobile-toggle'</span>);
+<span class="code-keyword">const</span> <span class="code-var">navMenu</span> = <span class="code-obj">document</span>.<span class="code-method">querySelector</span>(<span class="code-str">'.site-nav'</span>);
+
+
+<span class="code-var">toggleButton</span>.<span class="code-method">addEventListener</span>(<span class="code-str">'click'</span>, () =&gt; {
+
+
+    <span class="code-var">navMenu</span>.<span class="code-prop">classList</span>.<span class="code-method">toggle</span>(<span class="code-str">'is-open'</span>);
+
+    <span class="code-comment">// Update accessibility attribute</span>
+    <span class="code-keyword">const</span> <span class="code-var">isOpen</span> = <span class="code-var">navMenu</span>.<span class="code-prop">classList</span>.<span class="code-method">contains</span>(<span class="code-str">'is-open'</span>);
+    <span class="code-var">toggleButton</span>.<span class="code-method">setAttribute</span>(<span class="code-str">'aria-expanded'</span>, <span class="code-var">isOpen</span>);
+});</code></pre>
           </article>
         </div>
       </section>
