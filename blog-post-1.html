@@ -1,42 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>How I Built This Portfolio | Blog</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <header class="site-header">
-        <div class="container">
-            <a href="index.html" class="logo">John McLaren</a>
-            <nav class="site-nav">
-                <ul>
-                    <li><a href="blog.html">Back to Blog</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container">
+        <a href="index.html" class="logo">John McLaren</a>
+        <nav class="site-nav">
+          <ul>
+            <li><a href="blog.html">Back to Blog</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-        <article class="blog-post-content">
-            <div class="container" style="max-width: 800px;"> <header class="post-header">
-                    <span class="blog-date">Jan 5, 2026</span>
-                    <h1 class="project-title">How I built this portfolio</h1>
-                </header>
+      <article class="blog-post-content">
+        <div class="container" style="max-width: 800px">
+          <header class="post-header">
+            <span class="blog-date">Jan 5, 2026</span>
+            <h1 class="project-title">How I built this portfolio</h1>
+          </header>
 
-                <div class="post-body">
-                    <p>
-                        When I started learning, I was tempted to Wordpress or something similar. However, since I'm at the starting phase, I decided to jump in with HTML, CSS and a litte bit of JavaScript.</p>
+          <div class="post-body">
+            <p>
+              When I started learning, I was tempted to Wordpress or something
+              similar. However, since I'm at the starting phase, I decided to
+              jump in with HTML, CSS and a litte bit of JavaScript.
+            </p>
 
-                    <h2>The JavaScript Challenge</h2>
-                    <p>
-                        I've never really used JavaScript so I leaned into online resources such as <a href="https://stackoverflow.com/">stackoverflow</a> 
-                        to create a burger menu which toggles the mobile menu. Here's a bit of the code:
-                    </p>
+            <h2>The JavaScript Challenge</h2>
+            <p>
+              I've never really used JavaScript so I leaned into online
+              resources such as
+              <a href="https://stackoverflow.com/">stackoverflow</a>
+              to create a burger menu which toggles the mobile menu. Here's a
+              bit of the code:
+            </p>
 
-                    <pre
+            <pre
               class="code-block"
             ><code><span class="code-keyword">const</span> <span class="code-var">toggleButton</span> = <span class="code-obj">document</span>.<span class="code-method">querySelector</span>(<span class="code-str">'.mobile-toggle'</span>);
 <span class="code-keyword">const</span> <span class="code-var">navMenu</span> = <span class="code-obj">document</span>.<span class="code-method">querySelector</span>(<span class="code-str">'.site-nav'</span>);
@@ -49,33 +55,31 @@
     <span class="code-var">toggleButton</span>.<span class="code-method">setAttribute</span>(<span class="code-str">'aria-expanded'</span>, <span class="code-var">isOpen</span>);
 });</code></pre>
 
-
-                    <p>
-                        This function simply toggles a CSS class, which keeps the JavaScript lightweight 
-                        and the animation performance high.
-                    </p>
-                </div>
-
-            </div>
-        </article>
+            <p>
+              This function simply toggles a CSS class, which keeps the
+              JavaScript lightweight and the animation performance high.
+            </p>
+          </div>
+        </div>
+      </article>
     </main>
 
     <footer id="contact" class="site-footer">
-        <div class="container">
+      <div class="container">
+        <div class="footer-content">
+          <h2 class="footer-title">Get in touch</h2>
+          <a href="mailto:john@studiobyte.me" class="email-link"
+            >john@studiobyte.me</a
+          >
 
-            <div class="footer-content">
-                <h2 class="footer-title">Get in touch</h2>
-                <a href="mailto:hello@example.com" class="email-link">hello@example.com</a>
-
-                <ul class="social-list">
-                    <li><a href="#">Github</a></li>
-                    <li><a href="#">LinkedIn</a></li>
-                </ul>
-            </div>
-
-            <p class="copyright">&copy; 2026 John McLaren. All rights reserved.</p>
+          <ul class="social-list">
+            <li><a href="https://github.com/johngildebug">Github</a></li>
+            <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+          </ul>
         </div>
-    </footer>
 
-</body>
+        <p class="copyright">&copy; 2026 John McLaren. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>
