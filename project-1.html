@@ -111,21 +111,10 @@
               hover style for my skills.
             </p>
 
-            <pre
-              class="code-block"
-            ><code><span class="code-keyword">const</span> <span class="code-var">toggleButton</span> = <span class="code-obj">document</span>.<span class="code-method">querySelector</span>(<span class="code-str">'.mobile-toggle'</span>);
-<span class="code-keyword">const</span> <span class="code-var">navMenu</span> = <span class="code-obj">document</span>.<span class="code-method">querySelector</span>(<span class="code-str">'.site-nav'</span>);
-
-
-<span class="code-var">toggleButton</span>.<span class="code-method">addEventListener</span>(<span class="code-str">'click'</span>, () =&gt; {
-
-
-    <span class="code-var">navMenu</span>.<span class="code-prop">classList</span>.<span class="code-method">toggle</span>(<span class="code-str">'is-open'</span>);
-
-    <span class="code-comment">// Update accessibility attribute</span>
-    <span class="code-keyword">const</span> <span class="code-var">isOpen</span> = <span class="code-var">navMenu</span>.<span class="code-prop">classList</span>.<span class="code-method">contains</span>(<span class="code-str">'is-open'</span>);
-    <span class="code-var">toggleButton</span>.<span class="code-method">setAttribute</span>(<span class="code-str">'aria-expanded'</span>, <span class="code-var">isOpen</span>);
-});</code></pre>
+            <pre class="code-block"><code><span class="code-selector">.site-nav a:hover</span> { 
+            <span class="code-prop">color</span>: <span class="code-val">var(--color-orange)</span>; 
+            <span class="code-prop">transition</span>: <span class="code-val">color 0.2s</span>;
+}</code></pre>
           </article>
         </div>
       </section>
