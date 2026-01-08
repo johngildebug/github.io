@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog | John McLaren</title>
+    <title>How I Built This Portfolio | Blog</title>
     <script src="js/main.js" defer></script>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css"
@@ -17,45 +17,47 @@
         <a href="index.html" class="logo">John McLaren</a>
         <nav class="site-nav">
           <ul>
-            <nav class="site-nav">
-          <ul>
-            <li><a href="index.html#work">Work</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="index.html#about">About</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="blog.html">Back to Blog</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main>
-      <section class="page-header">
-        <div class="container">
-          <h1 class="hero-title">My Writings</h1>
-          <p class="hero-subtitle">Thoughts on code, design and learning.</p>
-        </div>
-      </section>
-
-      <section class="blog-list-section">
-        <div class="container">
-          <article class="blog-preview">
+      <article class="blog-post-content">
+        <div class="container" style="max-width: 800px">
+          <header class="post-header">
             <span class="blog-date">Jan 8, 2026</span>
-            <h2><a href="blog-post-1.html">Some easy fixes for code blocks</a></h2>
-            <p>
-              I decided to remove the messy CSS and HTML</p>
-            <a href="blog-post-2.html" class="text-link">Read Article &rarr;</a>
-          </article>
+            <h1 class="project-title">Updating to Prism.js</h1>
+          </header>
 
-          <article class="blog-preview">
-            <span class="blog-date">Jan 5, 2026</span>
-            <h2><a href="blog-post-1.html">How I built this portfolio</a></h2>
+          <div class="post-body">
             <p>
-              Here's a short summary of the beginnings of this website and a couple of the beginner challenges I faced!</p>
-            <a href="blog-post-1.html" class="text-link">Read Article &rarr;</a>
-          </article>
+              So I decided to remove the messy CSS and HTML snippets to represent the code block and implement Prism.
+              This led to deciding which format to prioritise and since I liked the asthetic of the orange border on the left and the smaller font size, I added some !important tags to overwrite the default.
+            </p>
 
+            <h2>The Changes</h2>
+            <p>
+              Here's the new version:</p>
+
+            <pre class="code-block language-css"><code>.site-nav a:hover {
+    color: var(--color-orange);
+    transition: color 0.2s;
+}</code></pre>
+<p>Here's the original:</p>
+            <pre
+              class="code-block"
+            ><code><span class="code-selector">.site-nav a:hover</span> {
+    <span class="code-prop">color</span>: <span class="code-val">var(--color-orange)</span>;
+    <span class="code-prop">transition</span>: <span class="code-val">color 0.2s</span>;
+}</code></pre>
+
+            <p>
+              This simple update wasn't without its challenges though. I ran into the font size issue and then fell into the trap of a rogue comment closer (*/)!</p>
+          </div>
         </div>
-      </section>
+      </article>
     </main>
 
     <footer id="contact" class="site-footer">
