@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How I Built This Portfolio | Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="logo">John McLaren</a>
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="blog.html">Back to Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article class="blog-post-content">
+            <div class="container" style="max-width: 800px;"> <header class="post-header">
+                    <span class="blog-date">Jan 5, 2026</span>
+                    <h1 class="project-title">How I built this portfolio</h1>
+                </header>
+
+                <div class="post-body">
+                    <p>
+                        When I started learning web development, I was tempted to use heavy frameworks like React. 
+                        However, I realized that for a static portfolio, standard HTML and CSS is much faster 
+                        and better for SEO.
+                    </p>
+
+                    <h2>The JavaScript Challenge</h2>
+                    <p>
+                        I wanted to create a toggle for the mobile menu. Here is the vanilla JavaScript function 
+                        I wrote to handle the click event:
+                    </p>
+
+                    <pre class="code-block"><code><span class="code-selector">const</span> <span class="code-prop">toggleMenu</span> = () => {
+    <span class="code-selector">const</span> nav = document.<span class="code-prop">querySelector</span>(<span class="code-val">'.site-nav'</span>);
+    
+    nav.classList.<span class="code-prop">toggle</span>(<span class="code-val">'is-open'</span>);
+    
+    <span class="code-selector">if</span> (nav.classList.<span class="code-prop">contains</span>(<span class="code-val">'is-open'</span>)) {
+        console.<span class="code-prop">log</span>(<span class="code-val">"Menu opened!"</span>);
+    }
+}</code></pre>
+
+                    <p>
+                        This function simply toggles a CSS class, which keeps the JavaScript lightweight 
+                        and the animation performance high (60fps).
+                    </p>
+                </div>
+
+            </div>
+        </article>
+    </main>
+
+    <footer id="contact" class="site-footer">
+        <div class="container">
+
+            <div class="footer-content">
+                <h2 class="footer-title">Get in touch</h2>
+                <a href="mailto:hello@example.com" class="email-link">hello@example.com</a>
+
+                <ul class="social-list">
+                    <li><a href="#">Github</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+
+            <p class="copyright">&copy; 2026 John McLaren. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

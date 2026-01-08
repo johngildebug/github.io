@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio & Blog</title>
+    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🟠</text></svg>"
+    />
+    <meta property="og:title" content="Your Name | Web Developer" />
+    <meta
+      property="og:description"
+      content="Portfolio of a junior developer based in the UK, specializing in semantic HTML and modern CSS."
+    />
+    <meta property="og:image" content="assets/images/project-1.jpg" />
+    <meta property="og:url" content="https://yourname.github.io/portfolio" />
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a href="index.html" class="logo">John McLaren</a>
+
+        <button
+          class="mobile-toggle"
+          aria-label="toggle-navigation"
+          aria-expanded="false"
+        >
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+
+        <nav class="site-nav">
+          <ul>
+            <li><a href="#work">Work</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-title">
+            Building digital products with
+            <span class="highlight">purpose</span>
+          </h1>
+          <p class="hero-subtitle">
+            I am a developer based in the UK, focused on clean code and user
+            experience.
+          </p>
+          <a href="#work" class="btn">View My Work</a>
+        </div>
+      </section>
+
+      <section id="work" class="work-section">
+        <div class="container">
+          <h2 class="section-title">Selected Work</h2>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <img
+                src="assets/images/project-1.jpg"
+                alt="Screenshot of my portfolio website"
+                class="project-img"
+              />
+              <div class="card-content">
+                <h3>Portfolio Site</h3>
+                <p>
+                  A responsive portfolio built with semantic HTML and Modern
+                  CSS.
+                </p>
+                <a href="project-1.html" class="text-link">View Code &rarr;</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img
+                src="assets/images/project-1.jpg"
+                alt="Screenshot of my portfolio website"
+                class="project-img"
+              />
+              <div class="card-content">
+                <h3>E-Commerce Dashboard</h3>
+                <p>A dashboard layout using CSS Grid and Flexbox.</p>
+                <a href="#" class="text-link">View Code &rarr;</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img
+                src="assets/images/project-1.jpg"
+                alt="Screenshot of my portfolio website"
+                class="project-img"
+              />
+              <div class="card-content">
+                <h3>Task App</h3>
+                <p>A JavaScript productivity tool with local storage.</p>
+                <a href="#" class="text-link">View Code &rarr;</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="blog" class="blog-section">
+        <div class="container">
+          <h2 class="section-title">Latest Writing</h2>
+
+          <article class="blog-post">
+            <div class="blog-header">
+              <h3>How I Built This Portfolio</h3>
+              <span class="blog-date">Jan 5, 2026</span>
+            </div>
+
+            <p>
+              Building a site with semantic HTML is crucial for accessibility.
+              Here is a snippet of the CSS I used for the navigation hover
+              effect:
+            </p>
+
+            <pre
+              class="code-block"
+            ><code><span class="code-selector">.site-nav a:hover</span> {
+    <span class="code-prop">color</span>: <span class="code-val">var(--color-orange)</span>;
+    <span class="code-prop">transition</span>: <span class="code-val">color 0.2s</span>;
+}</code></pre>
+
+            <a href="blog-post-1.html" class="text-link">Read full article &rarr;</a>
+          </article>
+
+          <article class="blog-post">
+            <div class="blog-header">
+              <h3>Understanding CSS Grid</h3>
+              <span class="blog-date">Dec 28, 2025</span>
+            </div>
+
+            <p>Why I switched from Flexbox to Grid for my project layouts.</p>
+            <a href="#" class="text-link">Read full article &rarr;</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="about-section">
+        <div class="container about-layout">
+          <div class="about-text">
+            <h2 class="section-title">About Me</h2>
+            <p>
+              I am a junior web developer based in the UK, transitioning into
+              tech with a passion for building accessible, pixel-perfect user
+              interfaces.
+            </p>
+            <p>
+              When I am not coding, I am exploring new design trends and
+              learning how to make the web faster and more inclusive for
+              everyone.
+            </p>
+
+            <a href="assets/documents/cv.pdf" class="btn btn-outline" download
+              >Download CV</a
+            >
+          </div>
+
+          <div class="about-skills">
+            <h3>My Tech Stack</h3>
+            <ul class="skills-list">
+              <li>HTML5</li>
+              <li>CSS3 (Flexbox & Grid)</li>
+              <li>Python</li>
+              <li>SQL</li>
+              <li>VS Code</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <h2 class="footer-title">Get in touch</h2>
+          <a href="mailto:hello@example.com" class="email-link"
+            >hello@example.com</a
+          >
+
+          <ul class="social-list">
+            <li><a href="#">Github</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+
+        <p class="copyright">&copy; 2026 John McLaren. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
